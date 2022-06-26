@@ -108,7 +108,7 @@ router.post("/signin", (req, res) => {
   if( email == "" || password == "") {
     res.json({
       status: "FAILED",
-      message: "Empty credentials"
+      message: "Empty Credentials"
     })
   } else {
     User.find({email})
